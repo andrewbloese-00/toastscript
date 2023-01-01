@@ -1,18 +1,23 @@
-# toastscript
+#  UI Toast
 
 A simple javascript library for creating popup notifications in vanilla javascript. 
 
 ## Usage 
 1. Installation
 > With npm
-```npm install toastscript```
+```npm install  uitoast-js```
 
-> CDN
-```<script src=""></script>```
+
 
 2. Setup 
+In an html file attach the styles
 ```
-import {Toaster} from toastscript
+    <link rel="stylesheet" href="uitoast-js/style.css">
+```
+
+In a js file...
+```
+import {Toaster} from " uitoast-js"
 //*initialize 
 const toaster = new Toaster()
 
@@ -47,12 +52,4 @@ toaster.custom(
         color: "red,
     }
     )
-
-
-
-
-//
-
-
-
 ```

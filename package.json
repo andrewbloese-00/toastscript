@@ -1,12 +1,29 @@
 {
-  "name": "vanillatoast",
+  "name": "uitoast-js",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple notification library for displaying toast style messages. Get going in as little as 2 lines of code.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewbloese-00/toastscript.git"
+  },
+  "keywords": [
+    "notification",
+    "toaster",
+    "javascript",
+    "vanilla",
+    "notifications",
+    "vanilla",
+    "notifiaction",
+    "templates"
+  ],
+  "author": "Andrew Bloese",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewbloese-00/toastscript/issues"
+  },
+  "homepage": "https://github.com/andrewbloese-00/toastscript#readme"
 }
