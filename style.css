@@ -1,0 +1,63 @@
+* { 
+    box-sizing: border-box;
+}
+.toast-message { 
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    place-items: center;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    animation-name: slideIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    margin: 1rem auto;
+}
+
+@keyframes slideIn {
+    from { 
+        transform: translateY(-100vw);
+        opacity: 0;
+    } to { 
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideOut {
+    from { 
+        transform: translateX(0);
+        opacity: 1;
+    } to { 
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+}
+.toast_wrapper { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    position: fixed;
+
+    top: 1rem; left: 0;
+}
+.toast-message span { 
+    font-size: xx-large;
+}
+.toast-leaving { 
+    animation-name: slideOut;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.toast-message p { 
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.toast-success { 
+    background-color: rgb(194, 255, 235)
+}
