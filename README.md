@@ -10,10 +10,6 @@ A simple javascript library for creating popup notifications in vanilla javascri
 
 
 2. Setup 
-In an html file attach the styles
-```
-    <link rel="stylesheet" href="uitoast-js/style.css">
-```
 
 In a js file...
 ```
