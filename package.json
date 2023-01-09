@@ -1,6 +1,6 @@
 {
   "name": "uitoast-js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "proxy": "http://localhost:8080",
   "description": "A simple notification library for displaying toast style messages. Get going in as little as 2 lines of code.",
   "main": "index.mjs",

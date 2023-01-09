@@ -135,5 +135,3 @@ export class Toaster {
 
 }
 
-const t = new Toaster()
-t.success("LOL")
