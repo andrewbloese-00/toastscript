@@ -58,6 +58,10 @@
 
 }
 
+.toast-message:hover { 
+    filter: brightness(1.1);
+}
+
 .toast-success { 
     background-color: rgb(194, 255, 235)
 }

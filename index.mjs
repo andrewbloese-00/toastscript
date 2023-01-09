@@ -1,5 +1,4 @@
 
-
 const ICONS = { 
     LOADING: "⏱️",
     ERROR: "🚫",
@@ -14,10 +13,17 @@ const ToastMessage = ( icon , message ) => {
         <span>${icon}</span>
         <p>${message}</p>
     `
+
+    div.addEventListener("click",e=>{
+        div.classList.add("toast-leaving")
+        setTimeout(()=>{
+            div.remove()
+        },600)
+    })
     return div
 }
 
-class Toaster { 
+export class Toaster { 
     constructor(){
         this.toaster = document.createElement("div")
         this.toaster.className = "toast_wrapper"
@@ -33,6 +39,7 @@ class Toaster {
      */
     success(message,expireTime=5000){
         let notification = ToastMessage(ICONS.SUCCESS,message)
+     
         notification.classList.add("toast-success")
         this.toaster.appendChild(notification)
         this.toasts.push({notification,expires: Date.now() + expireTime})
@@ -128,21 +135,5 @@ class Toaster {
 
 }
 
-function wait(s){
-    return new Promise(resolve=>{
-        setTimeout(()=>{
-            resolve()
-        },s*1000)
-    })
-
-}
-
-async function main(){
-    let toaster = new Toaster()
-    toaster.warn("Experiencing some connection issues...")
-    toaster.error("Something went wrong...")
-    toaster.success("Reconnected Successfully")
-
-    // toaster.dismount()
-}
-main()
+const t = new Toaster()
+t.success("LOL")
